@@ -1,5 +1,6 @@
 # 2020 AI Challenge - SpeechRecognition
-2020 AI Challenge 음성 인식 코드 
+[2020 AI Challenge](http://aifactory.space/aichallenge/total/search) 음성 인식 코드. 
+Solo team showyourvoice 8th rank
 
 ### 룰 관련
 - Rule에 따라 코드가 태스크 별로 하나로 병합되어 있습니다.
@@ -16,10 +17,10 @@
     - Text : grapheme, greedy decoder
     - Audio : 
       - Specaugment *Torch Audio - masking 활용*
-      - 16khz sample rate, MFCC - Mel (40/80) dims, 400 fft, 400 window, 200 hop length
+      - 16khz sample rate, MFCC - Mel 40 또는 80 dims, 400 fft, 400 window, 200 hop length
   - 모델 및 학습 방법 관련
     - LAS [Listen, Attend and Spell](https://arxiv.org/abs/1508.01211) 
-    - LAS의 RNN 및 기본가 RNN 모델에 Layer Normalization 추가 : RNN + Layer Normalization
+    - LAS의 RNN 및 기본 RNN 모델에 Layer Normalization 추가 : RNN + Layer Normalization
     - Optimizer : [AdamP](https://github.com/clovaai/AdamP) 
     - Drop out 등
   - Drop out, layer normalization, adamp 모두 성능 개선에 영향을 끼침
